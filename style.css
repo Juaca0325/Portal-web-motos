@@ -1,0 +1,137 @@
+/* 
+   ESTILOS GENERALES DE LA PÁGINA
+    */
+
+body {
+    font-family: Arial, sans-serif; /* Cambia el tipo de letra de toda la página */
+    margin: 0; /* Quita el margen que los navegadores ponen por defecto */
+    background-color: #111; /* Color de fondo oscuro para toda la página */
+    color: white; /* Color del texto en blanco */
+}
+
+
+/* 
+   ENCABEZADO 
+    */
+
+header {
+    background: linear-gradient(to right, #000, #b30000); /* Degradado de negro a rojo */
+    padding: 20px; /* Espacio interno dentro del header */
+    text-align: center; /* Centra el texto del encabezado */
+}
+
+
+/* 
+   MENÚ DE NAVEGACIÓN
+    */
+
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina espacio interno de la lista */
+}
+
+nav ul li {
+    display: inline; /* Hace que los elementos del menú se muestren en línea */
+    margin: 0 15px; /* Espacio a los lados entre cada elemento del menú */
+}
+
+nav a {
+    color: white; /* Color del texto de los enlaces */
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-weight: bold; /* Hace el texto del menú en negrita */
+}
+
+nav a:hover {
+    color: red; /* Cuando pasas el mouse el texto se vuelve rojo */
+}
+
+
+/* 
+   SECCIONES DE LA PÁGINA
+    */
+
+section {
+    padding: 40px; /* Espacio interno dentro de cada sección */
+}
+
+
+/* 
+   ARTÍCULOS (TARJETAS DE MOTOS)
+   
+   */
+
+article {
+    background-color: #1c1c1c; /* Color de fondo del artículo */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 30px; /* Espacio debajo de cada artículo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 15px rgba(255,0,0,0.4); /* Sombra roja alrededor del artículo */
+}
+
+
+/* 
+   IMÁGENES
+    */
+
+img {
+    border-radius: 10px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease; /* Animación suave cuando se hace hover */
+}
+
+img:hover {
+    transform: scale(1.05); /* Hace que la imagen crezca un poco al pasar el mouse */
+}
+
+
+
+
+ 
+
+/* 
+   BOTONES
+   */
+
+button {
+    background-color: red; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Quita el borde */
+    padding: 10px 20px; /* Espacio interno del botón */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano al pasar el mouse */
+}
+
+button:hover {
+    background-color: darkred; /* Cambia el color cuando pasas el mouse */
+}
+
+
+
+#deportivas, #mediacilindrada {
+    display: grid; /* Activa el sistema de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    /* Crea columnas automáticas de mínimo 300px */
+    gap: 20px; /* Espacio entre cada tarjeta */
+}
+
+
+/* 
+   IMÁGENES DENTRO DE ARTÍCULOS
+    */
+
+article img {
+    width: 100%; /* Hace que la imagen ocupe todo el ancho del artículo */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+
+article {
+    width: 300px; /* Define el ancho del artículo */
+    padding: 15px; /* Espacio interno */
+    margin: 20px; /* Espacio alrededor del artículo */
+    background-color: #111; /* Fondo oscuro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: inline-block; /* Hace que los artículos se acomoden en línea */
+    vertical-align: top; /* Alinea los artículos arriba */
+}   
